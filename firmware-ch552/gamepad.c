@@ -57,10 +57,10 @@ void main(void) {
     memcpy(&prev_report, &report, sizeof(report));
     while (1) {
         report.buttons = 0;
-        report.buttons |= !PIN_read(P11) << 0;
-        report.buttons |= !PIN_read(P31) << 1;
-        report.buttons |= !PIN_read(P30) << 2;
-        report.buttons |= !PIN_read(P33) << 3;
+        report.buttons |= !PIN_read(P33) << 0;
+        report.buttons |= !PIN_read(P30) << 1;
+        report.buttons |= !PIN_read(P31) << 2;
+        report.buttons |= !PIN_read(P11) << 3;
         report.buttons |= !PIN_read(P12) << 4;
         report.buttons |= !PIN_read(P35) << 5;
         report.buttons |= !PIN_read(P13) << 6;

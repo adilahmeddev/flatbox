@@ -12,7 +12,7 @@ XRAM_SIZE  = 0x0300
 CODE_SIZE  = 0x3800
 
 # Toolchain
-CC         = sdcc
+CC         = sdcc-sdcc
 OBJCOPY    = objcopy
 PACK_HEX   = packihx
 WCHISP    ?= python3 tools/chprog.py
