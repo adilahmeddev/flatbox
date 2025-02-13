@@ -66,7 +66,7 @@ void main(void) {
         report.buttons |= !PIN_read(P13) << 6;
         report.buttons |= !PIN_read(P34) << 7;
         report.buttons |= !PIN_read(P14) << 9;
-        report.buttons |= !PIN_read(P32) << 12;
+        report.buttons |= !PIN_read(P32) << 13;
         uint8_t dpad = !PIN_read(P15) | (!PIN_read(P17) << 1) | (!PIN_read(P10) << 2) | (!PIN_read(P16) << 3);
         report.dpad = dpad_lut[dpad];
         if (memcmp(&report, &prev_report, sizeof(report)) != 0) {
